@@ -1,0 +1,673 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.appear {
+  visibility: hidden;
+}
+
+.reset, .hard-panel, .easy-level, .bonus-level {
+  width: 30%;
+  font-size: 4rem;
+  text-align: center;
+  display: inline-block;
+  background: #3a3a3a;
+  width: 43%;
+  padding: 20px 30px;
+  border-radius: 51px;
+  letter-spacing: 0.3rem;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.reset:hover, .hard-panel:hover, .easy-level:hover, .bonus-level:hover {
+  background: white;
+  color: #3a3a3a;
+  bottom: 10px;
+  right: 10px;
+  box-shadow: 20px 20px 40px #660505;
+}
+
+.start-button {
+  display: block;
+  width: 50%;
+  background: yellow;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reset-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.play-area {
+  display: flex;
+}
+
+.hacker-person img {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.hacker-hole img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.hacker-hole {
+  position: relative;
+  z-index: 1;
+}
+
+.laptop-section.laptop {
+  position: relative;
+}
+
+.hacker-person {
+  position: absolute;
+}
+
+.hard-level {
+  overflow: hidden;
+  position: relative;
+  height: 80vh;
+  background: #3a3a3a;
+  box-shadow: 20px 20px 40px #660505;
+}
+
+.hard-level img {
+  width: 12%;
+  height: 19%;
+  border-radius: 50%;
+}
+
+.first-page img {
+  position: absolute;
+  z-index: -1;
+  display: inline-block;
+  width: 30%;
+}
+
+.first-page {
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.start-game {
+  height: 100vh;
+}
+
+.play-area {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  padding-top: 25%;
+  overflow: hidden;
+  height: 60vh;
+  background: #3a3a3a;
+  box-shadow: 20px 20px 40px #660505;
+}
+
+.game-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.hacker-hole {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hacker-person img {
+  border-radius: 50%;
+  position: relative;
+  top: 149px;
+  width: 36%;
+}
+
+.hacker-hole img {
+  width: 100%;
+}
+
+.get-ready {
+  display: block;
+  font-size: 25rem;
+  transition: ease;
+}
+
+.end-game h2 {
+  font-size: 10rem;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Luckiest Guy', arial, italic;
+  background: crimson;
+  color: white;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 10rem;
+  text-align: center;
+  margin-bottom: 0;
+  letter-spacing: 0.3rem;
+}
+
+h2 {
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes bop {
+  0% {
+    top: 100%;
+  }
+  10%, 50%, 20% {
+    margin-left: 400px;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.bop {
+  animation-name: bop;
+  animation-duration: 5s;
+}
+
+@media only screen and (max-width: 1080px) {
+  .hard-level img {
+    width: 13%;
+    height: 28%;
+  }
+  .hard-level {
+    height: 78vh;
+  }
+  .wrapper3 {
+    padding: 30px 0;
+  }
+  .wrapper3 h2 {
+    font-size: 5rem;
+  }
+  .wrapper3 .reset, .wrapper3 .hard-panel, .wrapper3 .easy-level {
+    font-size: 3rem;
+    width: 47%;
+  }
+  .wrapper2 h2 {
+    font-size: 5rem;
+  }
+  .wrapper2 .reset, .wrapper2 .hard-panel, .wrapper2 .easy-level {
+    font-size: 3rem;
+    width: 43%;
+    padding: 20px 25px;
+  }
+  /*     .hacker-hole {
+        top: 16%;
+    }
+
+    .hacker-person img {
+        top: 196px;
+        width: 36%;
+    } */
+  .play-area {
+    padding-top: 31%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .wrapper3 {
+    padding: 30px 0;
+  }
+  .wrapper3 h2 {
+    font-size: 5rem;
+  }
+  .hard-level {
+    height: 70vh;
+  }
+  .game-infoel, .reset-button {
+    height: 15vh;
+  }
+  .hard-level img {
+    width: 10%;
+    height: 25%;
+  }
+  .reset, .hard-panel, .easy-level {
+    padding: 14px 30px;
+  }
+  .wrapper2 .hard-panel, .wrapper2 .wrapper1 .wrapper1 .easy-level {
+    font-size: 3.5rem;
+    width: 49%;
+    padding: 17px 25px;
+  }
+  .wrapper2 .bounceInUp {
+    animation-duration: 4s;
+  }
+  /*     .hacker-hole {
+        top: 40px;
+    } */
+  .play-area {
+    padding-top: 37%;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .wrapper2 h2 {
+    font-size: 4.5rem;
+  }
+  /* 
+    .hacker-hole {
+        top: 52px;
+    } */
+  .play-area {
+    padding-top: 47%;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .hard-level img {
+    width: 8%;
+    height: 12%;
+  }
+  .wrapper3 h2 {
+    font-size: 4rem;
+  }
+  .wrapper3 .reset, .wrapper3 .hard-panel, .wrapper3 .easy-level {
+    font-size: 2rem;
+    padding: 20px 30px;
+  }
+  .wrapper2 h2 {
+    font-size: 4rem;
+  }
+  /*         .hacker-hole {
+        top: 58px;
+    } */
+  .play-area {
+    padding-top: 42%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .reset, .hard-panel, .easy-level, .bonus-level {
+    width: 64%;
+  }
+  .hard-level img {
+    height: 13%;
+  }
+  .wrapper2 h2 {
+    font-size: 3.5rem;
+  }
+  /*         .hacker-hole {
+        top: 76px;
+    } */
+  .play-area {
+    padding-top: 47%;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .hidden-dash {
+    visibility: hidden;
+  }
+  .wrapper1 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .wrapper1 h1 {
+    font-size: 7rem;
+  }
+  .wrapper1 h2 {
+    margin: 3px 0;
+  }
+  .wrapper3 h2 {
+    font-size: 3rem;
+  }
+  .wrapper3 .reset, .wrapper3 .hard-panel, .wrapper3 .easy-level {
+    width: 47%;
+    padding: 20px 16px;
+  }
+  .hard-level img {
+    height: 11%;
+  }
+  .wrapper2 {
+    width: 90%;
+  }
+  .wrapper2 .reset, .wrapper2 .hard-panel, .wrapper2 .easy-level {
+    font-size: 3rem;
+    width: 43%;
+    padding: 32px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*         .hacker-hole {
+        top: 89px;
+    } */
+  .play-area {
+    padding-top: 48%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  h1 {
+    font-size: 6.5rem;
+  }
+  .reset, .hard-panel, .easy-level, .bonus-level {
+    width: 69%;
+    font-size: 4rem;
+  }
+  .hard-level img {
+    height: 10%;
+  }
+  .wrapper3 .reset, .wrapper3 .hard-panel, .wrapper3 .easy-level {
+    width: 47%;
+    padding: 6px 16px;
+  }
+  .wrapper2 .reset, .wrapper2 .hard-panel, .wrapper2 .easy-level {
+    font-size: 2rem;
+  }
+  /*         .hacker-hole {
+        top: 115px;
+    } */
+  .play-area {
+    padding-top: 53%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 5.5rem;
+  }
+  .reset, .hard-panel, .easy-level, .bonus-level {
+    font-size: 3rem;
+    padding: 20px 22px;
+  }
+  .hard-level img {
+    height: 9%;
+  }
+  .wrapper3 h2 {
+    font-size: 2.5rem;
+  }
+  /* 
+        .hacker-hole {
+        top: 129px;
+    } */
+  .play-area {
+    padding-top: 53%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .reset, .hard-panel, .easy-level, .bonus-level {
+    padding: 20px 20px;
+  }
+  .hard-level img {
+    height: 7%;
+  }
+  .wrapper3 {
+    width: 90%;
+  }
+  .wrapper3 h2 {
+    width: 47%;
+  }
+  /*         .hacker-hole {
+        top: 145px;
+    }
+
+    .hacker-hole img {
+        position: relative;
+        top: 41px;
+    }
+
+    .hacker-person img {
+        top: 369 px;
+    } */
+  .play-area {
+    padding-top: 99%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .wrapper h1 {
+    font-size: 4.5rem;
+  }
+  .reset, .hard-panel, .easy-level, .bonus-level {
+    font-size: 2rem;
+    padding: 20px 18px;
+  }
+  .wrapper3 h2 {
+    width: 49%;
+  }
+  .wrapper3 .game-info {
+    padding: 0 9px;
+  }
+  /*         .hacker-hole {
+            top: 50%;
+        } */
+  .play-area {
+    padding-top: 115-"%";
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .reset, .hard-panel, .easy-level, .bonus-level {
+    padding: 20px 16px;
+  }
+  .wrapper3 {
+    width: 90%;
+  }
+  .wrapper3 h2 {
+    width: 49%;
+  }
+  .wrapper3 .bottom-info::nth-child(2) {
+    width: 57%;
+  }
+  .hacker-person img {
+    top: 399px;
+    width: 36%;
+  }
+  .play-area {
+    padding-top: 126%;
+  }
+}
+
+span {
+  margin-left: 10px;
+}

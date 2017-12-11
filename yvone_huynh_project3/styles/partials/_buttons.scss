@@ -1,0 +1,37 @@
+.reset, .hard-panel, .easy-level, .bonus-level {
+    width: 30%;
+    font-size: 4rem;
+    text-align: center;
+    display: inline-block;
+    background: $background;
+    width: 43%;
+    padding: 20px 30px;
+    border-radius: 51px;
+    letter-spacing: 0.3rem;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+/* .reset:hover, .hard-panel:hover, .easy-level:hover, .bonus-level:hover, */
+.reset:active, .hard-panel:active, .easy-level:active, .bonus-level:active {
+    background: white;
+    color: $background;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 20px 20px 40px rgb(102, 5, 5);
+
+}
+
+.start-button {
+    display: block;
+    width: 50%;
+    background: yellow;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reset-button {
+    display: flex;
+    justify-content: space-between;
+}
+
