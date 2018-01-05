@@ -18,7 +18,8 @@ body {
     font-family: 'Luckiest Guy', arial, italic;
     background: crimson;
     color: white;
-    height: 100vh;
+    // height: 100vh;
+    overflow: auto;
 }
 
 .wrapper {
@@ -48,6 +49,28 @@ a {
     color: white;
 }
 
+li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+    h3 {
+        text-decoration: underline;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+
+.instruction-body {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 @keyframes bop {
  0% {
      top: 100%;
@@ -66,6 +89,7 @@ a {
     animation-name: bop;
     animation-duration: 5s;
 }
+
 
 @import "partials/mediaquery";
 
