@@ -123,8 +123,6 @@ input[type=checkbox], input[type=radio] {
 
 input[type=search] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -161,8 +159,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -171,8 +167,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .reset-button {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .reset, .hard-panel, .easy-level, .bonus-level {
@@ -185,9 +185,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   position: relative;
   transition: all 0.2s ease-in-out;
   height: 100px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   padding: 0 30px;
 }
@@ -208,6 +214,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .play-area {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -266,8 +274,12 @@ body {
 }
 
 .wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 30px;
 }
 
@@ -276,25 +288,40 @@ body {
 }
 
 .play-area {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   position: relative;
-  padding-top: 25%;
-  height: 60vh;
+  padding-top: 23%;
+  overflow: hidden;
+  height: 70vh;
   background: #3a3a3a;
   box-shadow: 20px 20px 40px #660505;
 }
 
 .game-info {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
 }
 
 .hacker-hole {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   visibility: hidden;
 }
 
@@ -381,6 +408,18 @@ li p {
   display: block;
 }
 
+@-webkit-keyframes bop {
+  0% {
+    top: 100%;
+  }
+  10%, 50%, 20% {
+    margin-left: 400px;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
 @keyframes bop {
   0% {
     top: 100%;
@@ -394,8 +433,10 @@ li p {
 }
 
 .bop {
-  animation-name: bop;
-  animation-duration: 5s;
+  -webkit-animation-name: bop;
+          animation-name: bop;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -453,7 +494,8 @@ li p {
     padding: 17px 25px;
   }
   .wrapper2 .bounceInUp {
-    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
   }
   .play-area {
     padding-top: 37%;
@@ -533,9 +575,15 @@ li p {
   .wrapper2 .reset, .wrapper2 .hard-panel, .wrapper2 .easy-level {
     font-size: 3rem;
     padding: 32px 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .play-area {
     padding-top: 48%;
