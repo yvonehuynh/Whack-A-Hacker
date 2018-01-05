@@ -4,83 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Whack-A-Hacker!</title>
-
+    <title>Whack A Hacker - HomePage</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Montserrat" rel="stylesheet">
-
+    
     <!-- Animate.CSS -->
     <link rel="stylesheet" href="styles/animate.css">
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/3259d81f6e.js"></script>
-
+    
     <!-- CSS STyle Sheet -->
     <link rel="stylesheet" href="styles/style.css">
+    </head>
 </head>
-<body>
-    <div class="wrapper wrapper2 animated fadeIn">
-        <div class="play-area">
-            <div class="laptop-section laptop">
-                <div class="hacker-person animated infinite ">
-                    <img src="images/kristen.jpg" alt="Kristen Spencer">
-                </div>
-                <div class="hacker-hole">
-                    <img src="images/laptop.svg" alt="pear laptop">
-                </div>
-            </div>
+<body class="first-page">
+    <div class="wrapper wrapper1 animated fadeIn">
+        <main class="start-game">
+            <h1>Whack<span class="hidden-dash">-</span>A<span class="hidden-dash">-</span>Hacker</h1>
+            <li class="instruction-head">Instructions <i class="fa fa-caret-down" aria-hidden="true"></i>
+                <li class="instruction-body">
+                    <h3>Easy Level</h3>
+                    <p>Click on the HackerYou instructors and try to get the highest points before time runs out!</p>
+                    <h3>Medium Level</h3>
+                    <p>Click on the Cohort 16 classmates and try to get the highest points before time runs out!</p>
+                    <h3>Hard Level</h3>
+                    <p>Click on the Cohort 16 classmates to earn points but avoid clicking on the HackerYou staff, or else you lose all of your points!</p>
+                </li>
+            </li>
+            <SPAN class="user-name"></SPAN>
+            <h2><a class="easy-level" href="#">EASY</a></h2>
+            <h2><a class="hard-panel" href="#">MEDIUM</a></h2>
+            <h2><a class="bonus-level" href="#">HARD</a></h2>
+        </main>
 
-            <div class="laptop-section laptop">
-                <div class="hacker-person animated infinite ">
-                    <img src="images/ryan.jpg" alt="Ryan Christiani">
-                </div>
-                <div class="hacker-hole">
-                    <img src="images/laptop.svg" alt="pear laptop">
-                </div>
-            </div>
-
-            <div class="laptop-section laptop">
-                <div class="hacker-person animated infinite ">
-                    <img src="images/tiff.jpg" alt="Tiff Nogueira">
-                </div>
-                 <div class="hacker-hole">
-                    <img src="images/laptop.svg" alt="pear laptop">
-                </div>
-            </div>
-            <div class="laptop-section laptop">
-                <div class="hacker-person animated infinite infinite ">
-                    <img src="images/sylvia.jpg" alt="Sylvia Nguyen">
-                </div>
-                <div class="hacker-hole">
-                    <img src="images/laptop.svg" alt="pear laptop">
-                </div>
-            </div>
-        </div>
-        <div class="user-game-info"></div>
-        <!-- End Of Game Panel -->
         <section class="end-game">
-            <h2>You ran out of time! Play again?</h2>
+            <h2>Get Ready In: <span class="get-ready"></span></h2>
         </section>
-        
-        <section class="game-info">
-            <h2 class="bottom-info">Time Left: <span class="time-number">0</span></h2>
-            <h2 class="bottom-info">Your Score: <span class="scoreboard">0</span></h2>
-        </section>
-        
-        <div class="reset-button">
-            <a class="reset" href="#">Restart Game! <i class="fa fa-undo" aria-hidden="true"></i></a>
-            <a class="reset" href="first-page.html">Return to Menu</a>
-        </div>
     </div>
-
-
 
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-
+    
     <!-- Javascript Link -->
     <script type="text/javascript" src="javascript/javascript.js"></script>
-
 </body>
 </html>
