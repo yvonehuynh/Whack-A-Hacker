@@ -17,9 +17,9 @@ body {
     justify-content: center;
     align-content: center;
     position: relative;
-    padding-top: 25%;
+    padding-top: 23%;
     overflow: hidden;
-    height: 60vh;
+    height: 70vh;
     background: rgb(58, 58, 58);
     box-shadow: 20px 20px 40px rgb(102, 5, 5);
 }
@@ -33,6 +33,7 @@ body {
 .hacker-hole {
     display: flex;
     justify-content: space-between;
+    visibility: hidden;
 }
 
 .hacker-person img {
