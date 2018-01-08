@@ -10,18 +10,6 @@ let timer = 20;
 // initial countdown timer
 let coundDownTimer = 3;
 
-///////////////
-
-
-function hideMe(staff1, staff2, staff3, staff4) {
-    $(staff1).hide();
-    $(staff2).hide();
-    $(staff3).hide();
-    $(staff4).hide();
-}
-
-//////////////
-
 // Document Ready Starts
 $(document).ready(function () {
     $(".end-game").hide();
@@ -90,79 +78,14 @@ $(document).ready(function () {
         let time = setInterval(gameCountDown, 1000);
     }); // end easy level button animation function
 
-    $(".hard-panel").on("click", function (e) {
-        e.preventDefault();
-        $('.start-game').hide();
-        $(".end-game").fadeIn();
-        function gameCountDown() {
-            $(".get-ready").text(` ${coundDownTimer}`);
-            coundDownTimer = coundDownTimer - 1;
-            if (coundDownTimer < 0) {
-                window.setTimeout(function () {
-                    // Move to a new location or you can do something else
-                    window.location.href = "hard-level.html";
-                    coundDownTimer = 0;
-                });
-            }
-        }
-        let time = setInterval(gameCountDown, 1000);
-    }); // end hard level button animation function
-
     // page will reset when this button is clicked
     $(".reset").on('click', function () {
         window.location.reload(true);
     }); // end of page reload function
 
-    // user is prompted to enter their name
-    // User's name is displayed on the screen with the HTML "Hello _______, welcome to the game. Please click START to play!"
-    // User is taken to the game area
-
-    //////////////// HARD LEVEL PAGE //////////
-    // when the eggs are "popped", make them disappear!
-    $(".eggs").on("click", function () {
-        $(this).css({
-            display: "none"
-        })
-        score++;
-        $(".scoreboard").text(`${score}`);
-
-    }); // end of click function for hard-level
-
-    // egg people get called to animate at random times within 2 seconds
-    $(".eggs").each(function (i, el) {
-        window.setTimeout(function () {
-            $(el).addClass("fadeInUp" || "fadeInUp2");
-        }, Math.random() * 4000);
-    }); // end randomized animation function
-
-    // user chooses level of difficulty
     // user is led to the game countdown page
 
-    //////////////////// BONUS ROUND /////////////////////
-
-
-    $(".bonus-level").on("click", function (e) {
-        e.preventDefault();
-        $('.start-game').hide();
-        /*  $('.countdown').fadeIn(); */
-        $(".end-game").fadeIn();
-        function gameCountDown() {
-            $(".get-ready").text(` ${coundDownTimer}`);
-            coundDownTimer = coundDownTimer - 1;
-            if (coundDownTimer < 0) {
-                window.setTimeout(function () {
-                    // Move to a new location or you can do something else
-                    /* $(".end-game").fadeOut(); */
-                    window.location.href = "bonus-round.html";
-                    coundDownTimer = 0;
-                });
-            }
-        }
-        let time = setInterval(gameCountDown, 1000);
-    }); // end hard level button animation function
-
     // if you click on Heather, their catchphrase shows up, player loses game
-
 
     function timeRanOut() {
         score = 0;
@@ -174,31 +97,6 @@ $(document).ready(function () {
         $(".womp").fadeIn();
     };
 
-    // if heather is hit
-    $(".special").on("click", function () {
-        timeRanOut();
-        hideMe(".cto-hit", ".kristen-hit", ".tiff-hit", ".sylvia-hit")
-    });
-    // if Ryan is hit
-    $(".cto").on("click", function () {
-        timeRanOut();
-        hideMe(".ceo-hit", ".kristen-hit", ".tiff-hit", ".sylvia-hit")
-    });
-    // if Kristen is hit
-    $(".super-kristen").on("click", function () {
-        timeRanOut();
-        hideMe(".cto-hit", ".ceo-hit", ".tiff-hit", ".sylvia-hit")
-    });
-    // if Tiff is hit
-    $(".super-tiff").on("click", function () {
-        timeRanOut();
-        hideMe(".cto-hit", ".kristen-hit", ".ceo-hit", ".sylvia-hit")
-    });
-    // if Sylvia is hit
-    $(".super-sylvia").on("click", function () {
-        timeRanOut();
-        hideMe(".cto-hit", ".kristen-hit", ".tiff-hit", ".ceo-hit")
-    });
 
 }); // end document ready
 
