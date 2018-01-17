@@ -192,18 +192,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .hacker-person {
   position: absolute; }
 
-.hard-level {
-  overflow: hidden;
-  position: relative;
-  height: 80vh;
-  background: #3a3a3a;
-  -webkit-box-shadow: 20px 20px 40px #660505;
-  box-shadow: 20px 20px 40px #660505; }
-  .hard-level img {
-    width: 12%;
-    height: 19%;
-    border-radius: 50%; }
-
 .first-page img {
   position: absolute;
   z-index: -1;
