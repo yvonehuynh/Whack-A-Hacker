@@ -2,25 +2,26 @@
     display: flex;
 }
 
-.hacker-person img {
-    width: 40%;
-    display: block;
-    margin: 0 auto;
-}
+// .hacker-person img {
+//     width: 60%;
+//     display: block;
+//     margin: 0 auto;
+// }
 
-.hacker-hole img {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
-}
+// .hacker-hole img {
+//     width: 80%;
+//     display: block;
+//     margin: 0 auto;
+// }
 
-.hacker-hole {
-    position: relative;
-    z-index: 1;
-}
+// .hacker-hole {
+//     position: relative;
+//     z-index: 1;
+// }
 
 .laptop-section.laptop {
     position: relative;
+    display: flex;
 }
 
 .hacker-person {

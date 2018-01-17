@@ -1,6 +1,5 @@
 $background: rgb(58, 58, 58);
 @import "partials/setup";
-@import "partials/hidden";
 @import "partials/_buttons.scss";
 @import "partials/play-section";
 @import "partials/hard-level";
@@ -60,11 +59,6 @@ li {
     p {
         text-align: center;
     }
-}
-
-
-.instruction-body {
-    display: none;
 }
 
 .show {

@@ -30,21 +30,24 @@ body {
     justify-content: space-around;
 }
 
-.hacker-hole {
-    display: flex;
-    justify-content: space-between;
-    visibility: hidden;
-}
+// .hacker-hole {
+//     display: flex;
+//     justify-content: space-between;
+//     visibility: hidden;
+// }
 
 .hacker-person img {
     border-radius: 50%;
     position: relative;
     top: 149px;
-    width: 36%;
+    width: 56%;
 }
 
-.hacker-hole img {
-    width: 100%;
-}
+// .hacker-hole img {
+//     width: 100%;
+// }
 
+.laptop {
+    width: 20%;
+}
 
